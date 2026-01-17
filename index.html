@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Hangman</h1>
+    <h3 id="themeLbl">Theme: </h3>
+    <div id="wordContainer"></div>
+    <img id="hangman" src="Hangman PNGs/1.png" alt="Image">
+    <h3 id="instructionLbl">Type Any Character to Make a Guess!</h3>
+
+    <div class="keyboardRow">
+        <div class="keyboard" data-key="Q">Q</div>
+        <div class="keyboard" data-key="W">W</div>
+        <div class="keyboard" data-key="E">E</div>
+        <div class="keyboard" data-key="R">R</div>
+        <div class="keyboard" data-key="T">T</div>
+        <div class="keyboard" data-key="Y">Y</div>
+        <div class="keyboard" data-key="U">U</div>
+        <div class="keyboard" data-key="I">I</div>
+        <div class="keyboard" data-key="O">O</div>
+        <div class="keyboard" data-key="P">P</div>
+    </div>
+
+    <div class="keyboardRow">
+        <div class="keyboard" data-key="A">A</div>
+        <div class="keyboard" data-key="S">S</div>
+        <div class="keyboard" data-key="D">D</div>
+        <div class="keyboard" data-key="F">F</div>
+        <div class="keyboard" data-key="G">G</div>
+        <div class="keyboard" data-key="H">H</div>
+        <div class="keyboard" data-key="J">J</div>
+        <div class="keyboard" data-key="K">K</div>
+        <div class="keyboard" data-key="L">L</div>
+    </div>
+
+    <div class="keyboardRow">
+        <div class="keyboard" data-key="Z">Z</div>
+        <div class="keyboard" data-key="X">X</div>
+        <div class="keyboard" data-key="C">C</div>
+        <div class="keyboard" data-key="V">V</div>
+        <div class="keyboard" data-key="B">B</div>
+        <div class="keyboard" data-key="N">N</div>
+        <div class="keyboard" data-key="M">M</div>
+    </div>
+
+    <button id="restartBtn" data-key="ENTER">Play Again</button>
+    <script src="index.js"></script>
+</body>
+</html>

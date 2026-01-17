@@ -1,0 +1,131 @@
+body {
+    background-color: rgb(255, 187, 29);
+    color: rgb(255, 88, 88);
+    font-size: clamp(14px, 3vw, 28px);
+    font-family: Andale Mono, monospace;
+    text-align: center;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    margin: 10px 0;
+}
+
+#themeLbl {
+    margin-bottom: 10px;
+}
+
+#instructionLbl {
+    margin-bottom: 10px;
+}
+
+#wordContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.keyboardRow {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 10px;
+}
+
+.keyboard {
+    border: solid black 3px;
+    background-color: antiquewhite;
+    width: clamp(35px, 8vw, 55px);
+    height: clamp(35px, 8vw, 55px);
+    box-shadow: 0 0 0 2px black;
+    border-radius: 20px;
+    cursor: default;
+    line-height: clamp(35px, 8vw, 55px);
+    font-size: clamp(14px, 3vw, 24px);
+}
+
+.keyboard:hover,
+button:hover {
+    transform: scale(1.05);
+}
+
+.correct {
+    background-color: green;
+    color: antiquewhite;
+}
+
+.incorrect {
+    background-color: red;
+    color: antiquewhite;
+    pointer-events: none;
+}
+
+.letter {
+    border: solid black 3px;
+    background-color: antiquewhite;
+    width: clamp(35px, 8vw, 55px);
+    height: clamp(35px, 8vw, 55px);
+    box-shadow: 0 0 0 2px black;
+    border-radius: 20px;
+    line-height: clamp(35px, 8vw, 55px);
+    font-size: clamp(14px, 3vw, 24px);
+}
+
+img {
+    width: clamp(150px, 40vw, 300px);
+    border: solid 10px black;
+    border-radius: 40px;
+    margin-top: 40px;
+}
+
+button {
+    width: clamp(150px, 50vw, 300px);
+    height: clamp(45px, 12vw, 70px);
+    margin-top: 20px;
+    border-radius: 40px;
+    border: solid black 3px;
+    box-shadow: 0 0 0 2px black;
+    color: rgb(255, 88, 88);
+    font-family: Andale Mono, monospace;
+    font-size: clamp(16px, 4vw, 28px);
+    background-color: antiquewhite;
+    visibility: hidden;
+}
+
+.up {
+    animation: up 2s infinite;
+}
+
+.down {
+    animation: down 2s infinite;
+}
+
+@keyframes up {
+    0%, 100% { transform: translateY(5px); }
+    50% { transform: translateY(-5px); }
+}
+
+@keyframes down {
+    0%, 100% { transform: translateY(-5px); }
+    50% { transform: translateY(5px); }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    #title {
+        font-size: 7vw;
+    }
+
+    #themeLbl,
+    #instructionLbl {
+        font-size: 4.5vw;
+    }
+
+    img {
+        margin-top: 20px;
+    }
+}
